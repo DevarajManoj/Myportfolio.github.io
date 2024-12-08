@@ -1,0 +1,108 @@
+#wrapper-canvas canvas {
+    max-width: 100%;
+}
+
+body {
+  background-color: #111;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+}
+
+.logo-image {
+  width: 70px;
+  height: 70px;
+  filter: drop-shadow(4px 8px 12px rgba(14, 13, 13, 0.7));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-image:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(8px 16px 20px rgba(22, 22, 22, 0.9));
+}
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Certificate Section Container */
+.certificate-section {
+  padding: 20px;
+  background-color: #000; /* Black background */
+  color: white; /* Default text color */
+  font-family: "Arial", sans-serif;
+}
+
+/* Title Styling */
+.certificate-section h3 {
+  font-family: "Times New Roman", serif;
+  color: red; /* Red text for the headline */
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease-in-out; /* Animation effect */
+}
+
+/* Animation for Headline */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gallery Container */
+.certificate-gallery {
+  display: flex;
+  flex-direction: column; /* Ensures images are stacked vertically */
+  gap: 25px; /* Space between items */
+  align-items: center; /* Center items horizontally */
+}
+
+/* Individual Certificate Item */
+.certificate-item {
+  display: flex;
+  align-items: center; /* Vertically align image and description */
+  gap: 20px; /* Space between image and description */
+  width: 80%; /* Restrict the width for better alignment */
+  background: #222; /* Background color for the item */
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners for the box */
+  border: 2px solid #444; /* Subtle border for the box */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* White shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.certificate-item:hover {
+  transform: scale(1.02); /* Slight zoom effect */
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3); /* Enhance shadow on hover */
+}
+
+/* Image Styling */
+.certificate-item img {
+  width: 200px; /* Restrict image size */
+  height: 200px; /* Make the image square */
+  object-fit: cover; /* Ensure image fills the container */
+  border-radius: 10px; /* Rounded corners for the image */
+  border: 4px solid #fff; /* White border for the image */
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3); /* Subtle shadow for the image */
+}
+
+/* Description Styling */
+.certificate-item .description {
+  flex: 1; /* Take up remaining space */
+  color: #df0d0d; /* White text for the description */
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center; /* Align text to the left */
+  line-height: 2; /* Improve readability */
+}
