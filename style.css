@@ -1,5 +1,14 @@
+*{
+  margin: 0px;
+  padding: 0pxS;
+}
 #wrapper-canvas canvas {
     max-width: 100%;
+}
+.dlogo{
+  width: 50px;
+  filter:invert(100%);
+
 }
 
 body {
@@ -89,13 +98,14 @@ body {
 
 /* Image Styling */
 .certificate-item img {
+  position: relative;
   width: 200px; /* Set image size */
   height: 200px; /* Make the image square */
   object-fit: cover; /* Ensure image fills the container */
   border-radius: 10px; /* Rounded corners for the image */
   border: 2px solid #fff; /* White border for the image */
   box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3); /* Subtle shadow for the image */
-  margin-bottom: 10px; /* Space between image and description */
+  margin-bottom: 20px; /* Space between image and description */
 }
 
 /* Description Styling */
@@ -105,7 +115,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   text-align: center; /* Center align text */
-  line-height: 1.5; /* Improve readability */
+  line-height: 1.5; /* Improve readability */position: absolute;
 }
 
 
@@ -113,5 +123,30 @@ div>img{
   border-radius: 5%;
 }
 .description{
-  color:rgb(16, 198, 80)
+
+  color: rgb(17, 16, 16);
+  background: radial-gradient(circle, rgba(64,225,234,1) 16%, rgba(24,46,237,1) 88%);
+  font-weight:700;
+  padding :2px;
+  border-radius: 10px;
+  text-align:center ;
+  }
+  span{
+    display: none;
+  }
+  div:hover span{
+    display: inline-block;
+    color: rgb(17, 16, 16);
+    background: radial-gradient(circle, rgba(64,225,234,1) 16%, rgba(24,46,237,1) 88%);
+    font-weight:700;
+    padding :2px;
+    border-radius: 10px;
+    text-align:center ;
+   
+  }
+h1[name="name"]{
+  font-family: "Merriweather", serif;
+}
+footer p{
+  font-family: "Merriweather", serif;
 }
